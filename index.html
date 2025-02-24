@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Toolkit - Image & PDF Utilities</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f8f9fa;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        .hero {
+            margin-top: 80px;
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color: white;
+            text-align: center;
+        }
+
+        .tool-grid {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tool-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .tool-card i {
+            font-size: 2.5rem;
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+
+        .tool-card h3 {
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+
+        .tool-card p {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #3b82f6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+        }
+
+        .features {
+            background: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        .footer {
+            background: #1e293b;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .tool-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">Digital Toolkit</a>
+            <div class="nav-links">
+                <a href="#tools" class="text-white">Tools</a>
+                <a href="#features" class="text-white ml-4">Features</a>
+                <a href="#contact" class="text-white ml-4">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Your All-in-One Digital Solution</h1>
+        <p>Convert, compress, and transform files with ease</p>
+        <a href="#tools" class="btn">Explore Tools</a>
+    </section>
+
+    <section id="tools" class="tool-grid">
+        <!-- Image Tools -->
+        <a href="image-compress.html" class="tool-card">
+            <i class="fas fa-file-image"></i>
+            <h3>Image Compressor</h3>
+            <p>Reduce image file size without losing quality</p>
+        </a>
+
+        <a href="/GODSTOOLS/img-compression.html" class="tool-card">
+            <i class="fas fa-exchange-alt"></i>
+            <h3>Image Converter</h3>
+            <p>Convert between JPG, PNG, WEBP formats</p>
+        </a>
+
+        <a href="pdf-merge.html" class="tool-card">
+            <i class="fas fa-file-pdf"></i>
+            <h3>PDF Merger</h3>
+            <p>Combine multiple PDF files into one</p>
+        </a>
+
+        <a href="pdf-split.html" class="tool-card">
+            <i class="fas fa-cut"></i>
+            <h3>PDF Splitter</h3>
+            <p>Split PDF documents into separate pages</p>
+        </a>
+
+        <a href="image-resize.html" class="tool-card">
+            <i class="fas fa-expand-alt"></i>
+            <h3>Image Resizer</h3>
+            <p>Resize images to specific dimensions</p>
+        </a>
+
+        <a href="pdf-to-image.html" class="tool-card">
+            <i class="fas fa-file-export"></i>
+            <h3>PDF to Image</h3>
+            <p>Convert PDF pages to image files</p>
+        </a>
+    </section>
+
+    <section class="features">
+        <h2>Why Choose Us?</h2>
+        <div class="tool-grid">
+            <div class="tool-card">
+                <i class="fas fa-lock"></i>
+                <h3>Secure Processing</h3>
+                <p>All files are processed securely and deleted automatically</p>
+            </div>
+            <div class="tool-card">
+                <i class="fas fa-rocket"></i>
+                <h3>Fast Processing</h3>
+                <p>Quick conversions with cloud-powered speed</p>
+            </div>
+            <div class="tool-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile Friendly</h3>
+                <p>Works perfectly on all devices</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Digital Toolkit. All rights reserved.</p>
+        <div class="social-links mt-3">
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white ml-3"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white ml-3"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+</body>
+          </html>
